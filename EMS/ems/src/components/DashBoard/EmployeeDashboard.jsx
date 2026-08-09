@@ -5,12 +5,11 @@ import TaskListNumbers from "../other/TaskListNumbers"
 import TaskList from "../TaskList/TaskList"
 
 const EmployeeDashboard = ({data}) => {
-  console.log(data)
   return (
     <div className="bg-gray-200 h-screen  p-10">
-      <Header/>
-      <TaskListNumbers />
-      <TaskList />
+      <Header data={data}/>
+      <TaskListNumbers data={data}/>
+      <TaskList data={data}/>
     
     </div>
   )

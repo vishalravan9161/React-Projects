@@ -19,7 +19,7 @@ const [user, setUser] = useState(null)
 const [loggedInUserData, setLoggedInUserData] = useState(null)
 
 const authData = useContext(AuthContext)
-// console.log(authData.employees.find((e)=>email == e.email && e.password == password))
+
 
   // useEffect(() => {
   //  if(authData){
@@ -44,26 +44,22 @@ const handleLogin = (email,password)=>{
 
       setUser('employee') 
       setLoggedInUserData(employee)
-      localStorage.setItem('loggedInUser' , JSON.stringify({role:'employee'}))
+      
     }
+    localStorage.setItem('loggedInUser' , JSON.stringify({role:'employee'}))
    
-    
-
   }
   else{
     alert("Invalid Credintials")
   }
 
 }
-  
-
 
   return (
     <>
       {!user ? <Login handleLogin={handleLogin}/> : ''}
-      {user == 'admin' ? <AdminDashboard/> : <EmployeeDashboard data={loggedInUserData}/>}
+      {user == 'admin' ? <AdminDashboard/> : (user == 'employee' ? <EmployeeDashboard data={loggedInUserData} /> : null)}
     
-
     </>
   )
 }
