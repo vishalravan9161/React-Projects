@@ -16,7 +16,6 @@ useEffect(() => {
   
 }, [])
 
-
   return (
     <div>
      <AuthContext.Provider value={userData}>

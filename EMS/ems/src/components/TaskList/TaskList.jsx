@@ -1,63 +1,18 @@
 // import React from 'react'
 
+import AcceptTask from "./AcceptTask"
+import CompleteTask from "./CompleteTask"
+import FailedTask from "./FailedTask"
+import NewTask from "./NewTask"
+
 const TaskList = ({data}) => {
   return (
     <div id='TaskList' className=" h-[55%] w-full flex items-center overflow-x-auto justify-start flex-nowrap gap-5 py-5 mt-10 ">
-       <div className=" h-full shrink-0 w-[300px]  bg-yellow-400 rounded-xl">
-           <div className="flex justify-between items-center p-5">
-             <h3 className="bg-red-600 px-3 py-1 rounded-md font-medium text-white ">High</h3>
-            <h4 className="font-medium text-gray-700 bg-yellow-500 px-5 rounded-md">01-08-2026</h4>
-           </div>
-                 <h2 className=" text-2xl text-white text-center font-semibold bg-amber-800 rounded">React Video</h2>
-                <p className="font-sm text-gray-700  mt-5 text-center p-1">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto possimus dignissimos sapiente nihil, ipsa magni.
-                </p>
-       </div>
-
-        <div className=" h-full shrink-0 w-[300px]  bg-red-400 rounded-xl">
-           <div className="flex justify-between items-center p-5">
-             <h3 className="bg-red-600 px-3 py-1 rounded-md font-medium text-white ">High</h3>
-            <h4 className="font-medium text-gray-700 bg-yellow-500 px-5 rounded-md">01-08-2026</h4>
-           </div>
-                 <h2 className=" text-2xl text-white text-center font-semibold bg-amber-800 rounded">React Video</h2>
-                <p className="font-sm text-gray-700  mt-5 text-center p-1">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto possimus dignissimos sapiente nihil, ipsa magni.
-                </p>
-       </div>
-
-        <div className=" h-full shrink-0 w-[300px]  bg-green-400 rounded-xl">
-           <div className="flex justify-between items-center p-5">
-             <h3 className="bg-red-600 px-3 py-1 rounded-md font-medium text-white ">High</h3>
-            <h4 className="font-medium text-gray-700 bg-yellow-500 px-5 rounded-md">01-08-2026</h4>
-           </div>
-                 <h2 className=" text-2xl text-white text-center font-semibold bg-amber-800 rounded">React Video</h2>
-                <p className="font-sm text-gray-700  mt-5 text-center p-1">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto possimus dignissimos sapiente nihil, ipsa magni.
-                </p>
-       </div>
-
-        <div className=" h-full shrink-0 w-[300px]  bg-pink-400 rounded-xl">
-           <div className="flex justify-between items-center p-5">
-             <h3 className="bg-red-600 px-3 py-1 rounded-md font-medium text-white ">High</h3>
-            <h4 className="font-medium text-gray-700 bg-yellow-500 px-5 rounded-md">01-08-2026</h4>
-           </div>
-                 <h2 className=" text-2xl text-white text-center font-semibold bg-amber-800 rounded">React Video</h2>
-                <p className="font-sm text-gray-700  mt-5 text-center p-1">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto possimus dignissimos sapiente nihil, ipsa magni.
-                </p>
-       </div>
-
-        <div className=" h-full shrink-0 w-[300px]  bg-purple-400 rounded-xl">
-           <div className="flex justify-between items-center p-5">
-             <h3 className="bg-red-600 px-3 py-1 rounded-md font-medium text-white ">High</h3>
-            <h4 className="font-medium text-gray-700 bg-yellow-500 px-5 rounded-md">01-08-2026</h4>
-           </div>
-                 <h2 className=" text-2xl text-white text-center font-semibold bg-amber-800 rounded">React Video</h2>
-                <p className="font-sm text-white  mt-5 text-center p-1">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto possimus dignissimos sapiente nihil, ipsa magni.
-                </p>
-       </div>
        
+        <AcceptTask />
+        <NewTask />
+        <CompleteTask />
+        <FailedTask />
        
     </div>
   )
