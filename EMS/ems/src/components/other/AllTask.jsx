@@ -10,7 +10,7 @@ const AllTask = () => {
 //    console.log(AuthData)
   return (
 
-    <div className="bg-gray-300 mt-5  rounded-xl p-5 "> 
+    <div className="bg-[url('https://images.pexels.com/photos/7134987/pexels-photo-7134987.jpeg')] bg-cover  mt-5  rounded-xl p-5 "> 
 
                 <div className="bg-red-400 mt-3 flex font-medium justify-between p-2 rounded">
                     <h2 className="w-1/5 ">Employee Name</h2>

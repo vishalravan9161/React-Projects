@@ -6,7 +6,7 @@ import TaskList from "../TaskList/TaskList"
 
 const EmployeeDashboard = ({data}) => {
   return (
-    <div className="bg-gray-200 h-screen  p-10">
+    <div className="bg-[url('https://images.pexels.com/photos/6985184/pexels-photo-6985184.jpeg')] bg-cover h-screen  p-10">
       <Header data={data}/>
       <TaskListNumbers data={data}/>
       <TaskList data={data}/>

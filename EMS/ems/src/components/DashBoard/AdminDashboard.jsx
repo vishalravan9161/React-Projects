@@ -5,7 +5,7 @@ import Header from "../other/Header"
 // import React from 'react'
 
 const AdminDashboard = () => (
-  <div className="p-3 bg-gray-200 h-screen ">
+  <div className="p-3 bg-[url('https://images.pexels.com/photos/7134991/pexels-photo-7134991.jpeg')] bg-cover h-screen ">
     <Header />
      <CreateTask />
      <AllTask />

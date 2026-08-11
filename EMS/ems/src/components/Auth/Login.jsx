@@ -19,8 +19,8 @@ const Login = ({handleLogin}) => {
 
   return( <>
 
-      <div className="flex place-content-center items-center h-screen w-screen bg-[url('https://images.unsplash.com/photo-1507187632231-5beb21a654a2?q=80&w=901&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover ">
-        <div className="border-2 border-gray-400 p-20 rounded-2xl text-md grid bg-gray-300 opacity-90">
+      <div className="flex place-content-center items-center h-screen w-screen bg-[url('https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg')] bg-cover ">
+        <div className="border-2 border-gray-400 p-20 rounded-2xl text-md grid bg-gray-300 opacity-60">
             <form  onSubmit={(e)=>{
                 submithandler(e)
               }}
