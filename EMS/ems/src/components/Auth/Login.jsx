@@ -20,7 +20,7 @@ const Login = ({handleLogin}) => {
   return( <>
 
       <div className="flex place-content-center items-center h-screen w-screen bg-[url('https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg')] bg-cover ">
-        <div className="border-2 border-gray-400 p-20 rounded-2xl text-md grid bg-gray-300 opacity-60">
+        <div className="border-5 border-gray-800 p-20 rounded-2xl text-md grid opacity-60">
             <form  onSubmit={(e)=>{
                 submithandler(e)
               }}
@@ -31,7 +31,7 @@ const Login = ({handleLogin}) => {
               onChange={(e)=>{
                setEmail(e.target.value)
               }}
-              className="border-2 p-1 border-emerald-400 outline-none rounded"
+              className="border-2 p-1 border-emerald-800 outline-none rounded"
                placeholder="Enter your email" type="email" required />
 
               <input  
@@ -39,11 +39,11 @@ const Login = ({handleLogin}) => {
               onChange={(e)=>{
                setPassword(e.target.value)
               }}
-              className="border-2 border-emerald-400 p-1 outline-none rounded"
+              className="border-2 border-emerald-800 p-1 outline-none rounded"
               placeholder="Password" type="password" required />
 
               <button
-              className=" rounded  bg-emerald-500  ">Login</button>
+              className=" cursor-pointer active:scale-95 rounded p-2 bg-green-500 font-semibold ">Login</button>
             </form>
         </div>
            

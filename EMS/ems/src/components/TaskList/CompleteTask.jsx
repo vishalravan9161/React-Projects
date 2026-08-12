@@ -2,7 +2,7 @@
 
 const CompleteTask = ({data}) => {
   return (
-    <div className=" h-full shrink-0 w-[300px]  bg-green-400 rounded-xl">
+    <div className=" h-full shrink-0 w-75  bg-green-400 rounded-xl">
            <div className="flex justify-between items-center p-5">
              <h3 className="bg-red-600 px-3 py-1 rounded-md font-medium text-white ">{data.category}</h3>
             <h4 className="font-medium text-gray-700 bg-yellow-500 px-5 rounded-md">{data.tasDate}</h4>
