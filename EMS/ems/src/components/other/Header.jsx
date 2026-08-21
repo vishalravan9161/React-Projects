@@ -3,7 +3,7 @@
 // import { useState } from "react"
 
 const Header = ({ changeUser, data }) => {
-  console.log(data);
+  // console.log(data);
 
   // const [username, setUsername] = useState('')
 
