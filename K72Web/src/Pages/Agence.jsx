@@ -10,14 +10,14 @@ const Agence = () => {
   const imageDivRef = useRef(null)
   const imageRef  = useRef(null)
   const imageArray = [
-        'https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7',
-        'https://k72.ca/images/teamMembers/Olivier_480x640.jpg?w=480&h=640&fit=crop&s=c13569c0753117d04f1a93cf7b446d64',
-        'https://k72.ca/images/teamMembers/ChantalG_480x640.jpg?w=480&h=640&fit=crop&s=13093769c4a19cecd291ddcccd898991',
-        'https://k72.ca/images/teamMembers/Michele_480X640.jpg?w=480&h=640&fit=crop&s=ce85dc6d140947736baa739d0e59dab2',
-        'https://k72.ca/images/teamMembers/MEL_480X640.jpg?w=480&h=640&fit=crop&s=07c9bfee89816720b873e6748a276af6',
-        'https://k72.ca/images/teamMembers/CAMILLE_480X640_2.jpg?w=480&h=640&fit=crop&s=74317575b2d72fd11c5296615c383e4a',
-        'https://k72.ca/images/teamMembers/MEGGIE_480X640_2.jpg?w=480&h=640&fit=crop&s=3604b19f8fc7b40f517954147698d847',
-        'https://k72.ca/images/teamMembers/joel_480X640_3.jpg?w=480&h=640&fit=crop&s=1cadbf143b3aa916b1b414464acbb4d6',
+        '../../public/Images/(1) Carl_480x640.jpg',
+        '../../public/Images/(2) Olivier_480x640 (2).jpg',
+        '../../public/Images/(3) ChantalG_480x640 (3).jpg',
+        '../../public/Images/(4) Michele_480X640 (4).jpg',
+        '../../public/Images/(5) MEL_480X640 (5).jpg',
+        '../../public/Images/(6) CAMILLE_480X640_2 (6).jpg',
+        '../../public/Images/(7) MEGGIE_480X640_2.jpg',
+        '../../public/Images/(8) joel_480X640_3.jpg',
   ]
   // console.log(imageArray)
 
@@ -27,8 +27,12 @@ const Agence = () => {
       trigger:imageDivRef.current,
       start: 'top 22%',
       end: 'top -140%',
-      scrub: true,
+      scrub: 1,
       pin: true,
+      pinSpacer: true,
+      pinReparent: true,
+      pinType: 'transform',
+      invalidateOnRefresh: true,
       onUpdate:function(elem){
         let imageIndex;
        if(elem.progress<1){
@@ -44,8 +48,8 @@ const Agence = () => {
   
   return (
    <div>
-    <div className="sectoion1">
-    <div ref={imageDivRef} className="h-[20vw] w-[15vw] overflow-hidden rounded-2xl absolute top-35 left-102">
+    <div className="sectoion1 relative py-1">
+    <div ref={imageDivRef} className=" h-[20vw] w-[15vw] overflow-hidden rounded-2xl absolute top-43 left-102">
       <img ref={imageRef} className="rounded-2xl h-full w-full" src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7" alt="" />
     </div>
      <div className=" relative font-[font2]">
