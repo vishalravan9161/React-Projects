@@ -12,7 +12,7 @@
 
 .moveX{
     animation-name: moveAnimation;
-    animation-duration: 8s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
@@ -27,4 +27,13 @@
         transform: translate(-100%);
     }
     
+}
+
+.moveLink{
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.link:hover .moveLink{
+    opacity: 1;
 }
