@@ -20,7 +20,10 @@ const Navbar = () => {
       }}
        className="h-12 w-50 bg-black  relative ">
           <div ref={naveGreenRef} className="bg-[#D3FD50] transition-all absolute top-0 h-0 w-full"></div>
-          <div className="relative"> </div>
+          <div className="relative gap-2 flex justify-center h-full items-end mr-7 flex-col">
+            <div className="bg-white w-15 h-0.5"></div>
+            <div className="bg-white w-10 h-0.5"></div>
+          </div>
         </div>
     </div>
   )
