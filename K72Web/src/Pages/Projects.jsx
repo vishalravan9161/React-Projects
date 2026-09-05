@@ -55,9 +55,9 @@ useGSAP(function(){
 })
 
   return (
-    <div className="py-1 pl-3 bg-black/15">
+    <div className="py-1 pl-3">
       <div className=" lg:mt-[35vh] mt-40">
-        <h1 className="font-[font2] lg:mb-0.5 mb-20 text-[12vw] uppercase">Projects</h1>
+        <h1 className="font-[font2] font-bold lg:mb-0.5 mb-20 text-[12vw] uppercase">Projects</h1>
       </div>
       <div className="lol">
           {Projectsimg.map(function(elem ,idx){

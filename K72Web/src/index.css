@@ -38,3 +38,6 @@
     opacity: 1;
 }
 
+.icon {
+  filter: invert(1);
+}

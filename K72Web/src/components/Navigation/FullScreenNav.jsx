@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { useContext, useRef } from "react"
 import  { NavbarContext } from "../../context/NavContext"
+import { Link } from "react-router-dom"
 
 const FullScreenNav = () => {
     const [navOpen, setNavOpen] =  useContext(NavbarContext)
@@ -104,7 +105,8 @@ const FullScreenNav = () => {
        </div>
         
         <div className="overflow-hidden h-screen">
-          <div className="link origin-top border-t leading-20 relative ">
+         <Link to='/projects'>
+         <div className="link origin-top border-t leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Projects</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
                 <div className=" moveX flex items-center">
@@ -122,7 +124,9 @@ const FullScreenNav = () => {
                 
             </div>
           </div>
+         </Link>
 
+          <Link to='/agence'>
           <div className="link origin-top border-t leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Agency</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
@@ -141,6 +145,7 @@ const FullScreenNav = () => {
                 
             </div>
           </div>
+          </Link>
 
           <div className="link origin-top border-t leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Contact</h1>
