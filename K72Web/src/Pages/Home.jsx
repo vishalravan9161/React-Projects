@@ -11,8 +11,8 @@ const Home = () => {
          <Video />
     </div>
         <div className="h-screen w-screen relative flex flex-col justify-between">
-          <HomeHeroText  />
-          <HomeBottomText />
+            <HomeHeroText  />
+           <HomeBottomText />
         </div>
         
          
