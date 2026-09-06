@@ -66,16 +66,16 @@ const FullScreenNav = () => {
     useGSAP(function () {
         if (navOpen) {
 
-            gsapAnimation()
+          gsapAnimation()
         } else {
 
-            gsapAnimationReverse()
+          gsapAnimationReverse()
 
         }
      }, [navOpen])
 
   return (
-    <div ref={fullScreenRef} id="fullscreennav" className="fullscreennav text-white hidden overflow-hidden absolute z-50 h-screen w-full ">
+    <div ref={fullScreenRef} id="fullscreennav" className="fullscreennav  text-white hidden overflow-hidden absolute z-50 h-screen w-full ">
       <div className="h-screen w-full fixed ">
            <div className="h-full flex w-full">
         <div className="stairing h-full w-1/6 bg-black"></div>
