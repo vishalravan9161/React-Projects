@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 const FullScreenNav = () => {
     const [navOpen, setNavOpen] =  useContext(NavbarContext)
 
-        console.log(navOpen)
+        // console.log(navOpen)
 
    const fullNavLinkRef = useRef(null)
    const fullScreenRef = useRef(null)
@@ -105,7 +105,9 @@ const FullScreenNav = () => {
        </div>
         
         <div className="overflow-hidden h-screen">
-         <Link to='/projects'>
+         <Link onClick={()=>{
+          setNavOpen(null)
+         }} to='/projects'>
          <div className="link origin-top border-t leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Projects</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
@@ -126,7 +128,10 @@ const FullScreenNav = () => {
           </div>
          </Link>
 
-          <Link to='/agence'>
+          <Link onClick={()=>{
+          setNavOpen(null)
+         }}
+           to='/agence'>
           <div className="link origin-top border-t leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Agency</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
