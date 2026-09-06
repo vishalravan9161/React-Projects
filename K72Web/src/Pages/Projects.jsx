@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react"
 import ProjectCard from "../components/Projects/ProjectCard"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all"
+import Footer from "../Footer/Footer"
 
 const Projects = () => {
 
@@ -57,15 +58,18 @@ useGSAP(function(){
   return (
     <div className="py-1 pl-3">
       <div className=" lg:mt-[35vh] mt-40">
-        <h1 className="font-[font2] font-bold lg:mb-0.5 mb-20 text-[12vw] uppercase">Projects</h1>
+        <h1 className="font-[font2] font-bold lg:mb-0.5 mb-20 lg:text-[12vw] text-[50px] uppercase">Projects</h1>
       </div>
       <div className="lol">
           {Projectsimg.map(function(elem ,idx){
-          return <div key={idx} className=" hero gap-3 lg:mb-18 mb-9 -mt-15 flex lg:h-100 h-80 w-full">
+          return <div key={idx} className=" hero lg:gap-3 gap-6 lg:mb-18 mb-18 -mt-15 flex lg:h-100 h-80 w-full">
                 <ProjectCard image1={elem.image1} image2={elem.image2} key={idx} />
             </div>
         })}
       </div>
+     <div className="-mt-14">
+       <Footer />
+     </div>
     </div>
   )
 }

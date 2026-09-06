@@ -5,10 +5,12 @@ import Agence from "./Pages/Agence"
 import Projects from "./Pages/Projects"
 import Navbar from "./components/Navigation/Navbar"
 import FullScreenNav from "./components/Navigation/FullScreenNav"
+
 const App = () => {
   
   return (
     <div className=" h-screen"> 
+   
       <Navbar />
       <FullScreenNav />
       <Routes>

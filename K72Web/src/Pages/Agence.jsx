@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
+import Footer from "../Footer/Footer";
 
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -50,17 +51,17 @@ const Agence = () => {
   return (
    <div>
     <div className="sectoion1 relative py-1">
-    <div ref={imageDivRef} className=" h-[20vw] w-[15vw] overflow-hidden rounded-2xl absolute top-43 left-102">
+    <div ref={imageDivRef} className="lg:h-[20vw] h-30 lg:w-[15vw] w-20 overflow-hidden rounded-2xl absolute lg:top-43 top-10 lg:left-102 left-30">
       <img ref={imageRef} className="rounded-2xl h-full w-full" src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7" alt="" />
     </div>
      <div className=" relative font-[font2]">
       <div className="mt-[55vh] ">
-        <h1 className=" text-[20vw] text-center leading-[17vw] uppercase">SEVEN7Y <br />TWO</h1>
+        <h1 className=" lg:text-[20vw] text-[15vw] text-center lg:leading-[17vw] uppercase">SEVEN7Y <br />TWO</h1>
         
       </div>
 
       <div className="mt-5">
-        <p className="text-[3.5vw] leading-[4vw] ml-[42%]">
+        <p className="lg:text-[3.5vw] lg:leading-[4vw] leading-15 p-5 lg:ml-[42%] text-center">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We're inquisitive and open-minded, and we make sure creativity
            crowds out ego from every corner. A brand is a living thing, with 
@@ -73,6 +74,9 @@ const Agence = () => {
    <div className="section2 h-screen">
     
    </div>
+  <div className="-mt-60">
+     <Footer />
+  </div>
    </div>
   );
 };
