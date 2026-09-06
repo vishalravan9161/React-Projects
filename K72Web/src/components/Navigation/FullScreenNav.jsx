@@ -98,7 +98,7 @@ const FullScreenNav = () => {
             setNavOpen(false)
            }}
             >
-             <svg  className="cursor-pointer hover:text-[#D3FD50]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="110" height="110" viewBox="0 0 50 50">
+             <svg  className=" lg:h-30 h-15  cursor-pointer hover:text-[#D3FD50]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"   viewBox="0 0 50 50">
              <path fill="currentColor" d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
               </svg>
            </button>
@@ -110,7 +110,7 @@ const FullScreenNav = () => {
          <Link onClick={()=>{
           setNavOpen(null)
          }} to='/projects'>
-         <div className="link origin-top border-t leading-20 relative ">
+         <div className="link origin-top border-t lg:leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Projects</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
                 <div className=" moveX flex items-center">
@@ -134,7 +134,7 @@ const FullScreenNav = () => {
           setNavOpen(null)
          }}
            to='/agence'>
-          <div className="link origin-top border-t leading-20 relative ">
+          <div className="link origin-top border-t lg:leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Agency</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
                 <div className=" moveX flex items-center">
@@ -154,7 +154,7 @@ const FullScreenNav = () => {
           </div>
           </Link>
 
-          <div className="link origin-top border-t leading-20 relative ">
+          <div className="link origin-top border-t lg:leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Contact</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
                 <div className=" moveX flex items-center">
@@ -173,7 +173,7 @@ const FullScreenNav = () => {
             </div>
           </div>
 
-          <div className="link origin-top border-y leading-20 relative ">
+          <div className="link origin-top border-y lg:leading-20 relative ">
             <h1 className="font-[font2] text-[8vw] mt-3  text-center uppercase">Blog</h1>
             <div className="moveLink absolute  flex  top-0 bg-[#D3FD50] text-black">
                 <div className=" moveX flex items-center">

@@ -51,7 +51,7 @@ const Agence = () => {
   return (
    <div className="overflow-y-hidden">
     <div className="sectoion1 relative py-1">
-    <div ref={imageDivRef} className="lg:h-[20vw] h-30 lg:w-[15vw] w-20 overflow-y-hidden rounded-2xl absolute lg:top-43 top-10 lg:left-102 left-30">
+    <div ref={imageDivRef} className="lg:h-[20vw] h-40 lg:w-[15vw] w-30 overflow-y-hidden rounded-2xl absolute lg:top-43 top-10 lg:left-102 left-20">
       <img ref={imageRef} className="rounded-2xl h-full w-full" src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7" alt="" />
     </div>
      <div className=" relative font-[font2]">
