@@ -6,6 +6,7 @@ import { useContext, useRef } from "react"
 import  { NavbarContext } from "../../context/NavContext"
 import { Link } from "react-router-dom"
 import K72 from "../NavComponent/k72"
+import Footer from "../../Footer/Footer"
 
 const FullScreenNav = () => {
     const [navOpen, setNavOpen] =  useContext(NavbarContext)
@@ -187,13 +188,19 @@ const FullScreenNav = () => {
                   <h2 className="font-[font2] whitespace-nowrap text-[7vw] mt-3 text-center uppercase">Read Articles</h2>
                   <img className="h-20 rounded-full ml-3 mr-3 object-cover w-50 shrink-0" src="https://k72.ca/images/blog/blogImg/50ff59cc0550df5b36543807a58db98c52e01a22274a317eafbfa5266941579b.png?w=640&h=290&s=4f8134f04fe18db7382b99cec63c95f5" alt="" />
                 </div>
-                
+                    
+            </div>
+            <div className="border-t">
+               <Footer />
             </div>
           </div>
-          
+         
+     
+        
         </div>
+       
       </div>
-
+         
     </div>
   )
 }
