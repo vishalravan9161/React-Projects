@@ -24,7 +24,7 @@ const Navbar = () => {
       onMouseLeave={()=>{
          naveGreenRef.current.style.height ='0%'
       }}
-       className="lg:h-12 h-8 lg:w-50 w-15 bg-black cursor-pointer  relative ">
+       className="lg:h-12 h-8 lg:w-50 w-15 bg-black cursor-pointer relative ">
           <div ref={naveGreenRef} className="bg-[#D3FD50] transition-all absolute top-0 h-0 w-full"></div>
           <div className="relative gap-1 flex justify-center h-full items-end mr-7 flex-col">
             <div className="bg-white lg:w-15 w-7 h-0.5"></div>

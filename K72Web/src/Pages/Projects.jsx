@@ -57,12 +57,12 @@ useGSAP(function(){
 
   return (
     <div className="py-1 pl-3">
-      <div className=" lg:mt-[35vh] mt-40">
-        <h1 className="font-[font2] font-bold lg:mb-0.5 mb-20 lg:text-[12vw] text-[50px] uppercase">Projects</h1>
+      <div className=" lg:mt-[35vh] mt-60">
+        <h1 className="font-[font2] font-bold lg:mb-0.5 mb-30 lg:text-[12vw] text-[50px] hover:text-gray-700 uppercase">Projects</h1>
       </div>
       <div className="lol">
           {Projectsimg.map(function(elem ,idx){
-          return <div key={idx} className=" hero lg:gap-3 gap-6 lg:mb-18 mb-18 -mt-15 flex lg:h-100 h-80 w-full">
+          return <div key={idx} className=" hero lg:gap-3 gap-3 lg:mb-18 mb-18 -mt-16 flex lg:flex-row lg:h-100 h-80 w-full">
                 <ProjectCard image1={elem.image1} image2={elem.image2} key={idx} />
             </div>
         })}

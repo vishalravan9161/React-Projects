@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
        </div>
 
-      <div className="lg:flex lg:mt-60  mt-2 w-full justify-center ">
+      <div className="lg:flex lg:mt-60  mt-25 w-full justify-center ">
          <div className=" lg:flex  bottom-0 font-[font2] uppercase gap-5 items-center ">
         <h1 className="hover:text-[#D3FD50] text-center">privacy policy</h1>
         <h1 className="hover:text-[#D3FD50] text-center">privacy notice</h1>
