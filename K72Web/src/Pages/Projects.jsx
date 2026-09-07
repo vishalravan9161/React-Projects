@@ -56,7 +56,7 @@ useGSAP(function(){
 })
 
   return (
-    <div className="py-1 pl-3">
+    <div className="py-1 pl-3 pr-3">
       <div className=" lg:mt-[35vh] mt-60">
         <h1 className="font-[font2] font-bold lg:mb-0.5 mb-30 lg:text-[12vw] text-[50px] hover:text-gray-700 uppercase">Projects</h1>
       </div>
