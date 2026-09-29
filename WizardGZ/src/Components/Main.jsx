@@ -1,5 +1,4 @@
-
-
+import Card from "./Card";
 
 const Main = () => {
   return (
@@ -58,8 +57,8 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="flex h-20 px-10 text-center">
-          <div className="servise">
+        <div className="servise flex h-20 px-10 text-center">
+          <div className="">
             <h1 className="text-4xl font-bold bg-[#B9FF66] px-5 rounded-xl py-1">
               Services
             </h1>
@@ -72,7 +71,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="cards flex gap-10 px-10 mb-10 ">
+        {/* <div className="carddiv1 flex gap-10 px-10 mb-10 ">
           <div className="card1 rounded-2xl flex border-2 outline-none  w-1/2">
             <div className="texts flex flex-col justify-between m-5">
               <h1 className="text-3xl bg-[#B9FF66]  font-bold">
@@ -110,7 +109,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="cards flex gap-10 px-10 mb-10  ">
+        <div className="carddiv2 flex gap-10 px-10 mb-10  ">
           <div className="card3 rounded-2xl flex border-2 outline-none  w-1/2">
             <div className="texts flex flex-col justify-between m-5 ">
               <h1 className="text-3xl bg-[#B9FF66] font-bold">
@@ -147,7 +146,8 @@ const Main = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
+        <Card />
       </section>
 
       <div className=" px-10 mb-10 flex">
@@ -173,16 +173,20 @@ const Main = () => {
         </div>
       </div>
 
-        <div className=" px-10 -mt-5 mb-10">
-          <div className="study flex gap-10">
-            <h1 className="text-3xl font-bold bg-[#B9FF66] pt-1 rounded-xl px-5">Case study</h1>   
-           <div className="text-md font-semibold text-gray-600 ">
-             <p>Explore Real-Life Examples of Our Proven Digital Marketing Successes</p>
+      <div className=" px-10 -mt-5 mb-10">
+        <div className="study flex gap-10">
+          <h1 className="text-3xl font-bold bg-[#B9FF66] pt-1 rounded-xl px-5">
+            Case study
+          </h1>
+          <div className="text-md font-semibold text-gray-600 ">
+            <p>
+              Explore Real-Life Examples of Our Proven Digital Marketing
+              Successes
+            </p>
             <p>Through Our Case Studies.</p>
-           </div>
           </div>
         </div>
-         
+      </div>
     </div>
   );
 };
