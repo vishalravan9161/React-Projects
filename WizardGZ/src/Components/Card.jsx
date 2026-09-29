@@ -3,12 +3,12 @@ import {useGSAP} from "@gsap/react"
  gsap.registerPlugin(ScrollTrigger);
 const Card = () => {
 useGSAP(()=>{
- function animatio1(){
-   var tl= gsap.timeline()
+
+const tl= gsap.timeline()
 tl.from(".Section1 h1",{
   y:-90,
   opacity:0,
-  duration:0.5,
+  // duration:0.5,
   stagger:0.5
 })
 
@@ -36,95 +36,95 @@ tl.from(".servise",{
   x:200,
   opacity:0
 })
- }
- animatio1()
-  gsap.from(".carddiv1 .card1",{
+
+
+  tl.from(".carddiv1 .card1",{
     x:-600,
     opacity:0,
     duration:0.6,
     scrollTrigger:{
       trigger:".card1",
-      markers:true,
+      // markers:true,
       start:"top 80%",
       end:"top 30%",
-      scrub:true
+      scrub:1
     }
   })
 
-   gsap.from(".carddiv1 .card2",{
+   tl.from(".carddiv1 .card2",{
     x:600,
     opacity:0,
     duration:0.6,
     scrollTrigger:{
       trigger:".card2",
-      markers:true,
+      // markers:true,
       start:"top 80%",
       end:"top 30%",
-      scrub:true
+      scrub:1
     }
   })
 
-   gsap.from(".carddiv2 .card3",{
+   tl.from(".carddiv2 .card3",{
     x:-600,
     opacity:0,
     duration:0.6,
     scrollTrigger:{
       trigger:".card3",
-      markers:true,
+      // markers:true,
       start:"top 80%",
       end:"top 30%",
-      scrub:true
+      scrub:1
     }
   })
 
-   gsap.from(".carddiv2 .card4",{
+   tl.from(".carddiv2 .card4",{
     x:600,
     opacity:0,
     duration:0.6,
     scrollTrigger:{
       trigger:".card4",
-      markers:true,
+      // markers:true,
       start:"top 80%",
       end:"top 30%",
-      scrub:true
+      scrub:1
     }
   })
 
-   gsap.from(".thingshapendiv",{
+   tl.from(".thingshapendiv",{
     y:150,
     opacity:0,
     duration:0.6,
     scrollTrigger:{
       trigger:".thingshapendiv",
-      markers:true,
+      // markers:true,
       start:"top 80%",
       end:"top 30%",
-      scrub:true
+      scrub:1
     }
   })
-   gsap.from(".study",{
+   tl.from(".study",{
     y:-100,
     opacity:0,
     duration:0.6,
     scrollTrigger:{
       trigger:".study",
-      markers:true,
+      // markers:true,
       start:"top 80%",
       end:"top 30%",
-      scrub:true
+      scrub:1
     }
   })
 
-     gsap.from(".footer",{
+     tl.from(".footer",{
     y:-200,
     opacity:0,
     duration:0.6,
     scrollTrigger:{
       trigger:".footer",
-      markers:true,
+      // markers:true,
       start:"top 80%",
       end:"top 30%",
-      scrub:true
+      scrub:1
     }
   })
 },[])
