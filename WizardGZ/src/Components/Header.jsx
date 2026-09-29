@@ -1,44 +1,4 @@
 
-import gsap from "gsap";
-function animation1(){
-  var tl = gsap.timeline()
-tl.from(".Section1 h1",{
-  y:-30,
-  opacity:0,
-  duration:0.4,
-  stagger:0.5
-})
-
-tl.from(".navdiv h2",{
-  y:-20,
-  opacity:0,
-  stagger:0.4
-})
-tl.from(".navbutton button",{
-  y:-20,
-  opacity:0
-})
-tl.from(".Content .paraContent",{
-  x:-100,
-  opacity:0
-})
-tl.from(".Content .image",{
-  x:100,
-  opacity:0
-})
-tl.from(".company",{
-  opacity:0
-})
-tl.from(".servise",{
-  x:200,
-  opacity:0
-})
-
-}
-
-animation1()
-
-
 const Header = () => {
   return (
     <div>
