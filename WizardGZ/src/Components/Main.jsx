@@ -1,3 +1,6 @@
+
+
+
 const Main = () => {
   return (
     <div>
@@ -12,7 +15,7 @@ const Main = () => {
               online through a range of services including SEO,PPC.social media
               marketing, and content creation.
             </p>
-            <button className="bg-black text-white px-8 py-4 mt-5 rounded-xl text-xl outline-none flex gap-4">
+            <button className="bg-black text-white hover:text-[#B9FF66] px-8 py-4 mt-5 rounded-xl text-xl outline-none flex gap-4">
               Book a cunsultation<i class="ri-arrow-right-long-line"></i>
             </button>
           </div>
@@ -156,7 +159,7 @@ const Main = () => {
               Contact us today to learn more about our digital marketing
               services and how we can help your business grow.
             </p>
-            <button className="px-5 py-2 font-semibold rounded-2xl bg-black text-white mt-5">
+            <button className="px-5 hover:text-[#B9FF66]   py-2 font-semibold rounded-2xl bg-black text-white mt-5">
               {" "}
               Get your free proposal
             </button>
@@ -169,6 +172,17 @@ const Main = () => {
           </div>
         </div>
       </div>
+
+        <div className=" px-10 -mt-5 mb-10">
+          <div className="study flex gap-10">
+            <h1 className="text-3xl font-bold bg-[#B9FF66] pt-1 rounded-xl px-5">Case study</h1>   
+           <div className="text-md font-semibold text-gray-600 ">
+             <p>Explore Real-Life Examples of Our Proven Digital Marketing Successes</p>
+            <p>Through Our Case Studies.</p>
+           </div>
+          </div>
+        </div>
+         
     </div>
   );
 };
