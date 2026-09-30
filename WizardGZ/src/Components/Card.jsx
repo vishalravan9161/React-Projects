@@ -8,8 +8,8 @@ const tl= gsap.timeline()
 tl.from(".Section1 h1",{
   y:-90,
   opacity:0,
-  // duration:0.5,
-  stagger:0.5
+  duration:0.5,
+  stagger:0.2
 })
 
 tl.from(".navdiv h2",{
