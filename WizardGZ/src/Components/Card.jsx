@@ -1,9 +1,10 @@
 import gsap, { ScrollTrigger } from "gsap/all";
 import {useGSAP} from "@gsap/react"
  gsap.registerPlugin(ScrollTrigger);
+
 const Card = () => {
 useGSAP(()=>{
-
+  
 const tl= gsap.timeline()
 tl.from(".Section1 h1",{
   y:-90,
