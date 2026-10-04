@@ -1,1 +1,8 @@
 @import "tailwindcss";
+.logo:hover{
+    display: inline-block; 
+}
+
+#root{
+    background-color: #FAFAFA;
+}
