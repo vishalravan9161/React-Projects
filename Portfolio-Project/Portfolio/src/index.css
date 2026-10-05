@@ -4,5 +4,18 @@
 }
 
 #root{
-    background-color: #FAFAFA;
+   
+}
+
+@font-face {
+    font-family: font1;
+    src: url(./fonts/Humane-VF.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(./fonts/Fraunces-VariableFont_SOFTWONKopszwght.ttf);
+}
+html,
+body{
+    overflow-y: hidden;
 }
