@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-[url(https://4kwallpapers.com/images/walls/thumbs_2t/5670.jpg)] bg-cover bg-screen">
      <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>

@@ -15,7 +15,10 @@
     font-family: font2;
     src: url(./fonts/Fraunces-VariableFont_SOFTWONKopszwght.ttf);
 }
-html,
-body{
-    overflow-y: hidden;
+
+
+@font-face {
+    font-family: font3;
+    src: url(./fonts/Lausanne-500-B-HNrPDz.woff2);
 }
+
