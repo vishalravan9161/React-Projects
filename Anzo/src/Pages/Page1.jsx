@@ -12,7 +12,7 @@ const Page1 = () => {
      onMouseMove={(e)=>{
       mouseMoving(e)
      }}
-    className=' h-screen w-screen p-3  bg-white'>
+    className=' h-screen w-screen p-4 bg-white '>
      <div className="h-full w-full p-8 bg-[url('/Gemini_Generated_Image_smmdcysmmdcysmmd.png')] shadow-xl/500 bg-cover bg-center object-cover rounded-4xl">
           <img className='h-25 w-38 ' src="./../../public/910c3d186408801.6574f23df0825-removebg-preview.png" alt="" />
           
