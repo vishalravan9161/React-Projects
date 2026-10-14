@@ -5,3 +5,24 @@ body{
     color: white;
     overflow-x: hidden;
 }
+
+#page1-in{
+    perspective: 1000px;
+    position: relative;
+}
+
+#tilteDiv{
+    width: fit-content;
+    
+}
+
+
+@font-face {
+    font-family: font1;
+    src: url(./Fonts/helveticaneue.woff2);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(./Fonts/helveticaneue-medium.woff2);
+}
